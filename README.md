@@ -13,4 +13,4 @@ All data is handled with an SQL database.
 ###Link
 The project can be found at:
 
-[Goff Family DNA Project](http://dna.alexgoff.net/)
+[Goff Family DNA Project](http://dna.ggfagenealogy.org/)
