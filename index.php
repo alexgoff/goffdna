@@ -11,7 +11,7 @@
     <meta name="description" content="Goff Surname DNA Study results">
 
 	<!-- font -->
-	<link href='https://fonts.googleapis.com/css?family=Merriweather|Raleway:400,300,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather%7CRaleway:400,300,600' rel='stylesheet' type='text/css'>
 
 	<!-- css -->
 	<link rel="stylesheet" href="css/normalize.min.css">
@@ -24,7 +24,7 @@
 <?php
 //include functions
 $path = $_SERVER['DOCUMENT_ROOT']."/include/functions.php";
-include_once($path);
+include($path);
 
 //get read access to database
 pdo_open_read();
@@ -46,12 +46,12 @@ global $db;
 			if(isset($_GET['id'])) {
 				//show selected family
 				$path = $_SERVER['DOCUMENT_ROOT']."/include/table.php";
-				include_once($path);
+				include($path);
 			//if ID has not been set, display list of families
 			} else {
 				//show front page list
 				$path = $_SERVER['DOCUMENT_ROOT']."/include/frontpage.php";
-				include_once($path);
+				include($path);
 			};
 			?>
 		</div>
